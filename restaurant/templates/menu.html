@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<h3>Note :- The prices showen bellow after 30% Off for special weekend offer.</h3>
+<h1>Menu</h1>
+<!--Begin col-->
+<div class="column">
+    {% for item in menu.menu %}
+    <p>
+        <a href="{% url 'menu_item' pk=item.pk %}">
+            {{ item.name }}
+            </a>
+        <span class="menu-price">
+            INR {{ item.price }}.00
+        </span>
+    </p>
+    {% endfor %}
+</div>
+<!--End col-->
+{% endblock %}

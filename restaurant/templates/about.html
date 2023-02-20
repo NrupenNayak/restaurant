@@ -1,0 +1,61 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<section>
+  <article>
+    <h1>About Us</h1>
+    <!--Begin row-->
+    <div class="row">
+      <!--Begin col-->
+      <div class="column">
+        <p>
+          Based in India, Loyal Pythonic Food is a family owned
+          Indian restaurant, focused on traditional recipes served with a
+          modern twist.
+        </p>
+        <p>
+          The chefs draw inspiration from South Indian and  North Indian culture
+          and have a menu of 12-15 items that they rotate seasonally.
+        </p>
+
+        <p>
+          The restaurant has a rustic and relaxed atmosphere with moderate
+          prices, making it a popular place for a meal any time of the day.
+        </p>
+
+        <p>
+          Loyal Pythonic Food is owned by two Indian brothers, Nrupen and Samir, who
+          moved to the Other States to pursue their shared dream of owning a
+          restaurant.
+        </p>
+
+        <p>
+          To craft the menu, Samir relies on family recipes and his experience
+          as a chef in Hyderabad.
+        </p>
+
+        <p>
+          Nrupen does all the marketing for the restaurant and led the effort to
+          expand the menu beyond classic Indian to incorporate additional
+          cuisines from the mediterranean region.
+        </p>
+      </div>
+      <!--End col-->
+
+      <!--Begin col-->
+      <div class="column">
+        <figure class="figure">
+          <img
+            src="{% static 'img/mario-and-adrian.jpg' %}"
+            alt="Mario and Adrian"
+          />
+          <figcaption class="figure-caption">
+            <h3>Loyal Pythonic Food owners Nrupen and Samir.</h3>
+            <p><h4>Contact_us :- nrupennayak45@gmail.com, 8457839464</h4></p>
+          </figcaption>
+        </figure>
+      </div>
+      <!--End col-->
+    </div>
+    <!--End row-->
+  </article>
+</section>
+{% endblock %}
